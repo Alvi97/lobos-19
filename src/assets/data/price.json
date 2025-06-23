@@ -1,0 +1,212 @@
+[
+    {
+        "id": "63b843f81c2c85021d6ab291",
+        "sku": "GOA535",
+        "isActive": true,
+        "price": 53684.70,
+        "priceFormatted": "53'684.70 CHF"
+    },
+    {
+        "id": "63b843f8459810e41ec90c19",
+        "sku": "GOA495",
+        "isActive": true,
+        "price": 41541.30,
+        "priceFormatted": "41'541.30 CHF"
+    },
+    {
+        "id": "63b843f8a422c53cde2cdc20",
+        "sku": "GOA669",
+        "isActive": true,
+        "price": 41067.50,
+        "priceFormatted": "41'067.50 CHF"
+    },
+    {
+        "id": "63b843f8a3f0b192992342b7",
+        "sku": "GOA15",
+        "isActive": true,
+        "price": 47596.60,
+        "priceFormatted": "47'596.60 CHF"
+    },
+    {
+        "id": "63b843f82e710b49ffe92685",
+        "sku": "GOA391",
+        "isActive": true,
+        "price": 79996.30,
+        "priceFormatted": "79'996.30 CHF"
+    },
+    {
+        "id": "63b843f89a7068aabf283bf3",
+        "sku": "GOA374",
+        "isActive": true,
+        "price": 28205.90,
+        "priceFormatted": "28'205.90 CHF"
+    },
+    {
+        "id": "63b843f8a371a70387d5d2df",
+        "sku": "GOA513",
+        "isActive": true,
+        "price": 21573.60,
+        "priceFormatted": "21'573.60 CHF"
+    },
+    {
+        "id": "63b843f870a623e2c84572ed",
+        "sku": "GOA516",
+        "isActive": true,
+        "price": 59611.40,
+        "priceFormatted": "59'611.40 CHF"
+    },
+    {
+        "id": "63b843f88a84b3d2d59397fd",
+        "sku": "GOA261",
+        "isActive": false,
+        "price": 61989.10,
+        "priceFormatted": "61'989.10 CHF"
+    },
+    {
+        "id": "63b843f832c2d9a813e65c44",
+        "sku": "GOA399",
+        "isActive": true,
+        "price": 74327.10,
+        "priceFormatted": "74'327.10 CHF"
+    },
+    {
+        "id": "63b843f8991da9b8166bd78b",
+        "sku": "GOA935",
+        "isActive": true,
+        "price": 17422.60,
+        "priceFormatted": "17'422.60 CHF"
+    },
+    {
+        "id": "63b843f8d736b04653c29b9d",
+        "sku": "GOA623",
+        "isActive": false,
+        "price": 54359.30,
+        "priceFormatted": "54'359.30 CHF"
+    },
+    {
+        "id": "63b843f8063509d8d3cf3ea8",
+        "sku": "GOA981",
+        "isActive": true,
+        "price": 45354.50,
+        "priceFormatted": "45'354.50 CHF"
+    },
+    {
+        "id": "63b843f8741f70b1918e0687",
+        "sku": "GOA582",
+        "isActive": false,
+        "price": 39990.10,
+        "priceFormatted": "39'990.10 CHF"
+    },
+    {
+        "id": "63b843f8e719b8dc2da03e92",
+        "sku": "GOA326",
+        "isActive": false,
+        "price": 75780.60,
+        "priceFormatted": "75'780.60 CHF"
+    },
+    {
+        "id": "63b843f8e9b0544124bd9f3c",
+        "sku": "GOA406",
+        "isActive": true,
+        "price": 30128.40,
+        "priceFormatted": "30'128.40 CHF"
+    },
+    {
+        "id": "63b843f8a464981dd4fd5ffe",
+        "sku": "GOA536",
+        "isActive": false,
+        "price": 12336.30,
+        "priceFormatted": "12'336.30 CHF"
+    },
+    {
+        "id": "63b843f812c0d9a3714ca817",
+        "sku": "GOA573",
+        "isActive": true,
+        "price": 12528.80,
+        "priceFormatted": "12'528.80 CHF"
+    },
+    {
+        "id": "63b843f885b5dab18ab92c77",
+        "sku": "GOA735",
+        "isActive": false,
+        "price": 76491.60,
+        "priceFormatted": "76'491.60 CHF"
+    },
+    {
+        "id": "63b843f8451ff5f5cf35d6f6",
+        "sku": "GOA446",
+        "isActive": true,
+        "price": 53771.80,
+        "priceFormatted": "53'771.80 CHF"
+    },
+    {
+        "id": "63b843f8d380aaa86ff8690d",
+        "sku": "GOA261",
+        "isActive": true,
+        "price": 42172.10,
+        "priceFormatted": "42172.10 CHF"
+    },
+    {
+        "id": "63b843f8a0cb8704213c2cfc",
+        "sku": "GOA391",
+        "isActive": false,
+        "price": 43840.30,
+        "priceFormatted": "43'840.30 CHF"
+    },
+    {
+        "id": "63b843f8aff17dc992e6f75a",
+        "sku": "GOA623",
+        "isActive": true,
+        "price": 32457.30,
+        "priceFormatted": "32'457.30 CHF"
+    },
+    {
+        "id": "63b843f8bd257d921707439d",
+        "sku": "GOA536",
+        "isActive": true,
+        "price": 75181.60,
+        "priceFormatted": "75'181.60 CHF"
+    },
+    {
+        "id": "63b843f808426dc2d60dbd7e",
+        "sku": "GOA374",
+        "isActive": false,
+        "price": 22295.5,
+        "priceFormatted": "22'295.50 CHF"
+    },
+    {
+        "id": "63b843f88218eb3c0fe693d4",
+        "sku": "GOA582",
+        "isActive": true,
+        "price": 78746.1,
+        "priceFormatted": "78'746.10 CHF"
+    },
+    {
+        "id": "63b843f8d22336d58d455d00",
+        "sku": "GOA669",
+        "isActive": false,
+        "price": 16711.4,
+        "priceFormatted": "16'711.40 CHF"
+    },
+    {
+        "id": "63b843f83754e29c34c4512a",
+        "sku": "GOA735",
+        "isActive": true,
+        "price": 21885.5,
+        "priceFormatted": "21'885.50 CHF"
+    },
+    {
+        "id": "63b843f8fadc362950a57153",
+        "sku": "GOA513",
+        "isActive": false,
+        "price": 72143.7,
+        "priceFormatted": "72'143.70 CHF"
+    },
+    {
+        "id": "63b843f890934bf6d59b97b3",
+        "sku": "GOA326",
+        "isActive": true,
+        "price": 15067.8,
+        "priceFormatted": "15'067.80 CHF"
+    }
+]
