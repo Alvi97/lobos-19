@@ -1,0 +1,87 @@
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('../fonts/Minion Pro Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Trade Gothic LT';
+  src: url('../fonts/Trade Gothic LT Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Trade Gothic LT';
+  src: url('../fonts/Trade Gothic LT.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Trade Gothic LT';
+  src: url('../fonts/Trade Gothic LT Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-family-primary: 'Minion Pro', serif;
+  --font-family-secondary: 'Trade Gothic LT', sans-serif;
+
+  --color-gold-primary: #D4AF37;
+  --color-gold-hover: #B8941F;
+  --color-background-light: #F8F8F8;
+  --color-background-dark: #1A1A1A;
+  --color-white: #FFFFFF;
+  --color-text-primary: #2C2C2C;
+  --color-text-secondary: #666666;
+  --color-text-muted: #999999;
+  --color-border-light: #E5E5E5;
+  --color-border-gray: #CCCCCC;
+
+  --font-size-nav: 12px;        /* Navigation items */
+  --font-size-collection: 12px; /* Collection tags */
+  --font-size-body: 16px;       /* Body text */
+  --font-size-price: 24px;      /* Product price */
+  --font-size-title: 36px;      /* Main product title */
+  --font-size-section: 28px;    /* Section headings */
+
+  --font-weight-light: 300;     /* Trade Gothic LT Light */
+  --font-weight-regular: 400;   /* Trade Gothic LT Regular & Minion Pro */
+  --font-weight-bold: 700;      /* Trade Gothic LT Bold */
+
+  --header-height: 70px;
+  --section-padding: 80px;
+  --container-max-width: 1400px;
+  --grid-gap: 40px;
+  --thumbnail-size: 80px;
+  --main-image-max: 500px;
+  --product-info-width: 400px;
+
+  --letter-spacing-nav: 2px;    /* Navigation */
+  --letter-spacing-brand: 6px;  /* THE BRAND */
+  --letter-spacing-button: 1px; /* CTA buttons */
+
+  --transition-base: 300ms ease;
+  --transition-fast: 150ms ease;
+
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-button: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-gold: 0 4px 12px rgba(212, 175, 55, 0.3);
+  --shadow-carousel: 0 8px 32px rgba(0, 0, 0, 0.15);
+
+  --radius-small: 4px;
+  --radius-medium: 8px;
+  --radius-large: 50px;
+
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-modal: 1050;
+}

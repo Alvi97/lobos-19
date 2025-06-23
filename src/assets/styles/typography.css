@@ -1,0 +1,177 @@
+
+body {
+  font-family: var(--font-family-secondary); /* Trade Gothic LT */
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.brand-title {
+  font-family: var(--font-family-primary); /* Minion Pro */
+  font-size: 18px;
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-brand);
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.nav-text {
+  font-family: var(--font-family-secondary); /* Trade Gothic LT */
+  font-size: var(--font-size-nav);
+  font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-nav);
+  color: var(--color-text-primary);
+}
+
+.collection-tag {
+  font-family: var(--font-family-secondary); /* Trade Gothic LT */
+  font-size: var(--font-size-collection);
+  font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-nav);
+  color: var(--color-gold-primary);
+}
+
+.product-title {
+  font-family: var(--font-family-primary); /* Minion Pro */
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.2;
+  color: var(--color-text-primary);
+  margin: 16px 0 24px 0;
+}
+
+.product-price {
+  font-family: var(--font-family-secondary); /* Trade Gothic LT */
+  font-size: var(--font-size-price);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-secondary);
+  margin: 24px 0;
+}
+
+.section-heading {
+  font-family: var(--font-family-primary); /* Minion Pro */
+  font-size: var(--font-size-section);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-primary);
+  margin-bottom: 32px;
+}
+
+.section-label {
+  font-family: var(--font-family-secondary); /* Trade Gothic LT */
+  font-size: var(--font-size-collection);
+  font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-nav);
+  color: var(--color-gold-primary);
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* Body Text - Product descriptions */
+.body-text {
+  font-family: var(--font-family-secondary); /* Trade Gothic LT */
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+/* Specification Text - PIAGET, 2 YEARS, etc. */
+.spec-text {
+  font-family: var(--font-family-secondary); /* Trade Gothic LT */
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-primary);
+}
+
+/* Button Text - ADD TO SHOPPING BAG */
+.button-text {
+  font-family: var(--font-family-secondary); /* Trade Gothic LT */
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-button);
+}
+
+/* Carousel Product Names - Altiplano */
+.carousel-product-name {
+  font-family: var(--font-family-primary); /* Minion Pro */
+  font-size: 18px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-primary);
+}
+
+/* Carousel Product Brand - PIAGET */
+.carousel-product-brand {
+  font-family: var(--font-family-secondary); /* Trade Gothic LT */
+  font-size: 11px;
+  font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-muted);
+}
+
+/* Footer Headings - THE BRAND, CUSTOMER CARE, STAY IN TOUCH */
+.footer-heading {
+  font-family: var(--font-family-secondary); /* Trade Gothic LT */
+  font-size: 14px;
+  font-weight: var(--font-weight-bold); /* Trade Gothic LT Bold */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+
+/* Footer Text */
+.footer-text {
+  font-family: var(--font-family-secondary); /* Trade Gothic LT */
+  font-size: 14px;
+  font-weight: var(--font-weight-light); /* Trade Gothic LT Light */
+  line-height: 1.8;
+  color: #CCCCCC;
+}
+
+/* Utility Typography Classes */
+.text-luxury {
+  font-family: var(--font-family-primary); /* Minion Pro for luxury feel */
+}
+
+.text-ui {
+  font-family: var(--font-family-secondary); /* Trade Gothic LT for UI elements */
+}
+
+.text-light {
+  font-weight: var(--font-weight-light); /* Trade Gothic LT Light */
+}
+
+.text-regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.text-bold {
+  font-weight: var(--font-weight-bold); /* Trade Gothic LT Bold */
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-nav);
+}
+
+.text-gold {
+  color: var(--color-gold-primary);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-center {
+  text-align: center;
+}
