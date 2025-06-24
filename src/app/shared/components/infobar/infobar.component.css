@@ -1,0 +1,84 @@
+
+
+.infobar {
+  background: var(--color-white);
+  padding: 12px 0;
+  font-family: var(--font-family-secondary);
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.infobar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 20px;
+}
+
+.infobar-left,
+.infobar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.infobar-icon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+  transition: all var(--transition-base);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.infobar-icon:hover {
+  color: var(--color-text-primary);
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.infobar-icon:focus-visible {
+  outline: 1px solid var(--color-gold-primary);
+  outline-offset: 2px;
+}
+
+.infobar img{
+  width:16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .infobar {
+    padding: 8px 0;
+  }
+
+  .infobar-left,
+  .infobar-right {
+    gap: 12px;
+  }
+
+  .infobar-icon {
+    padding: 2px;
+  }
+
+  .infobar-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .infobar-left {
+    gap: 8px;
+  }
+
+  .infobar-right {
+    gap: 8px;
+  }
+
+}

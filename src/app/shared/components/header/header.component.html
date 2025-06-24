@@ -1,1 +1,23 @@
-<p>header works!</p>
+<header class="app-header">
+    <nav class="main-navigation">
+      @if (isMobile) {
+        <a class="nav-item logo-item"><img src="assets/images/logo.png" alt="Brand Logo" /></a>
+        <div class="nav-row">
+          <a class="nav-item">Watches</a>
+          <a class="nav-item">Jewellery</a>
+          <a class="nav-item">Wedding</a>
+          <a class="nav-item">Academy</a>
+          <a class="nav-item">Company</a>
+          <a class="nav-item">Stores</a>
+        </div>
+      } @else {
+        <a class="nav-item">Watches</a>
+        <a class="nav-item">Jewellery</a>
+        <a class="nav-item">Wedding</a>
+        <a class="nav-item logo-item"><img src="assets/images/logo.png" alt="Brand Logo" /></a>
+        <a class="nav-item">Academy</a>
+        <a class="nav-item">Company</a>
+        <a class="nav-item">Stores</a>
+      }
+    </nav>
+</header>

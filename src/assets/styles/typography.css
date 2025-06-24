@@ -18,13 +18,44 @@ body {
   color: var(--color-text-primary);
 }
 
-.nav-text {
+.nav-item {
   font-family: var(--font-family-secondary); /* Trade Gothic LT */
   font-size: var(--font-size-nav);
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-bold);
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-nav);
   color: var(--color-text-primary);
+}
+
+.nav-item:hover {
+  cursor:pointer;
+  color: var(--color-gold-primary);
+}
+
+.nav-item {
+  cursor: pointer;
+  transition: color var(--transition-base);
+  position: relative;
+}
+
+.nav-item:hover {
+  color: var(--color-gold-primary);
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background: var(--color-gold-primary);
+  transition: width var(--transition-base);
+}
+
+.nav-item:hover::after {
+  width: 100%;
 }
 
 .collection-tag {
