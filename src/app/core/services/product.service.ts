@@ -100,7 +100,6 @@ export class ProductService {
     const mainProd = this.mainProduct();
     return mainProd?.relatedProducts
       .map(sku => this.processedProducts().find(p => p.sku === sku))
-      .filter(p => p?.isActive)
       .sort((a, b) => (b?.numericPrice || 0) - (a?.numericPrice || 0)) || [];
   });
 
@@ -112,6 +111,7 @@ export class ProductService {
     effect(() => {
       if (this.mainProduct() && !this.loading()) {
         console.log('Main Product:', this.mainProduct() , this.mainProduct()?.title);
+        console.log('Related Products:', this.relatedProducts());
       }
     });
   }

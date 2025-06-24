@@ -1,0 +1,38 @@
+<div class="related-products-main-container">
+  <!-- Left Panel -->
+  <div class="left-panel">
+    <div>
+      <p class="collection-name">ALTIPLANO COLLECTION</p>
+      <h2 class="section-title">Related Pieces</h2>
+    </div>
+
+    <div>
+      <div class="drag-indicator">
+        <img src="./assets/images/icons/arrow.png" />
+        <span>DRAG</span>
+      </div>
+      <p class="pagination">3 / 9</p>
+    </div>
+  </div>
+
+  <div class="slider-wrapper">
+    <ul #sliderItems
+        class="items"
+        (mousedown)="onPointerDown($event)"
+        (touchstart)="onPointerDown($event)"
+        (mousemove)="onPointerMove($event)"
+        (touchmove)="onPointerMove($event)">
+
+      <li class="item" *ngFor="let product of productService.relatedProducts()">
+        <img [src]="product?.images?.mainImage"
+             [alt]="product?.title"
+             class="product-image">
+        <p class="product-brand">{{ product?.category?.toUpperCase() }}</p>
+        <h3 class="product-title">{{ product?.title }}</h3>
+        <p class="product-sku">Watch {{ product?.sku }}</p>
+        <p class="product-price">{{ product?.priceData?.priceFormatted | currencyFormater }}</p>
+      </li>
+
+    </ul>
+  </div>
+</div>

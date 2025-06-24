@@ -5,48 +5,40 @@
   min-height: 600px;
 }
 
-/* When image is on the left, reverse the flex direction */
 .product-details-flex.image-left {
   flex-direction: row-reverse;
 }
 
-/* Content section */
 .details-content {
   flex: 1;
   padding-right: 60px;
 }
 
-/* Adjust padding when image is on left */
 .image-left .details-content {
   padding-right: 0;
   padding-left: 60px;
 }
 
-/* Override section-label margin for this context */
 .details-content .section-label {
   margin-bottom: 16px;
 }
 
-/* Override section-heading margin for this context */
 .details-content .section-heading {
   margin-bottom: 48px;
   font-size: 32px;
   line-height: 1.2;
 }
 
-/* Specifications grid using flexbox */
 .specifications-flex {
   display: flex;
   flex-wrap: wrap;
   gap: 24px 40px;
 }
 
-/* Each spec item takes up ~50% width minus gap */
 .specifications-flex app-spec-item {
   flex: 0 0 calc(50% - 20px);
 }
 
-/* Image container */
 .details-image-container {
   flex: 0 0 50%;
   display: flex;
@@ -64,7 +56,6 @@
   max-height: 480px;
 }
 
-/* Responsive design */
 @media (max-width: 1200px) {
   .product-details-flex {
     gap: 32px;
@@ -85,7 +76,6 @@
 }
 
 @media (max-width: 1024px) {
-  /* On mobile, always stack vertically with image on top */
   .product-details-flex,
   .product-details-flex.image-left {
     flex-direction: column;
