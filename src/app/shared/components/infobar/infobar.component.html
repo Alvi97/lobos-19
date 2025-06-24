@@ -1,29 +1,18 @@
 <div class="infobar">
   <div class="infobar-content">
     <div class="infobar-left">
-      <button class="infobar-icon">
-        <img src="assets/images/icons/Contact.png" alt="Contact us" class="infobar-logo">
-      </button>
-      <button class="infobar-icon">
-        <img src="assets/images/icons/Stores.png" alt="Find locations" class="infobar-logo">
-      </button>
-      <button class="infobar-icon">
-        <img src="assets/images/icons/Language.png" alt="Information" class="infobar-logo">
-      </button>
+      @for (icon of infobarLeftIcons; track icon.alt) {
+        <button class="infobar-icon">
+          <img [src]="icon.src" [alt]="icon.alt" class="infobar-logo">
+        </button>
+      }
     </div>
     <div class="infobar-right">
-      <button class="infobar-icon">
-        <img src="assets/images/icons/bag.png" alt="Bag" class="infobar-logo">
-      </button>
-      <button class="infobar-icon">
-        <img src="assets/images/icons/wishlist.png" alt="Wishlist" class="infobar-logo">
-      </button>
-      <button class="infobar-icon">
-        <img src="assets/images/icons/Login.png" alt="Login" class="infobar-logo">
-      </button>
-      <button class="infobar-icon">
-        <img src="assets/images/icons/Search.png" alt="Search" class="infobar-logo">
-      </button>
+      @for (icon of infobarRightIcons; track icon.alt) {
+        <button class="infobar-icon">
+          <img [src]="icon.src" [alt]="icon.alt" class="infobar-logo">
+        </button>
+      }
     </div>
   </div>
 </div>
