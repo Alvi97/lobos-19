@@ -1,0 +1,14 @@
+.spec-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.spec-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  /* Gold color filter */
+  filter: brightness(0) saturate(100%) invert(73%) sepia(38%) saturate(411%) hue-rotate(356deg) brightness(91%) contrast(88%);
+}

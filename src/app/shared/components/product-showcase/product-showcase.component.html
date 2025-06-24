@@ -1,0 +1,28 @@
+<section class="section section-white">
+  <div class="container">
+    <div class="product-details-flex" [class.image-left]="imagePosition === 'left'">
+      <div class="details-content">
+        <h2 class="section-label">{{ category }}</h2>
+        <h3 class="section-heading">{{ title }}</h3>
+
+        <div class="specifications-flex">
+          @for (spec of showcaseData; track spec.title) {
+            <app-spec-item
+              [icon]="spec.imageSrc"
+              [label]="spec.text"
+              [value]="spec.title"
+            />
+          }
+        </div>
+      </div>
+
+      <div class="details-image-container">
+        <img
+          [src]="imageSrc"
+          [alt]="title"
+          class="product-detail-image"
+        />
+      </div>
+    </div>
+  </div>
+</section>

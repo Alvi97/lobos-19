@@ -1,0 +1,85 @@
+<div class="section" style="background-color: #F5F5F5;">
+  <div class="container">
+    @if (loading()) {
+      <div class="text-center">
+        <p class="body-text">Loading product...</p>
+      </div>
+    } @else if (error()) {
+      <div class="text-center">
+        <p class="body-text" style="color: #dc2626;">{{ error() }}</p>
+      </div>
+    } @else if (product()) {
+      <div class="product-layout">
+
+        <div class="thumbnail-gallery">
+          @for (img of product()!.images.gallery; track img; let i = $index) {
+            <button
+              (click)="selectMainImage(img)"
+              class="thumbnail-button"
+              [class.active]="img === mainImage"
+            >
+              <img
+                [src]="img"
+                alt="Product view {{ i + 1 }}"
+              />
+            </button>
+          }
+        </div>
+
+        <!-- Main Product Image -->
+        <div class="main-image-container">
+          <img
+            [src]="mainImage ?? product()?.images?.mainImage "
+            [alt]="product()!.title"
+            class="main-product-image"
+          />
+        </div>
+
+        <!-- Product Information -->
+        <div class="product-info">
+          <!-- Category Label -->
+          <span class="collection-tag">{{ product()!.category }} Watches</span>
+
+          <!-- Product Title -->
+          <h1 class="product-title">
+            {{ product()!.title }}<br>
+            {{ product()!.subTitle }}
+          </h1>
+
+
+          <div class="product-details">
+            <!-- Price -->
+            <div class="product-price">
+              {{ product()?.formattedPrice  | currencyFormater}}
+            </div>
+
+            <!-- SKU -->
+            <div class="spec-text" style="margin: 5px 0 5px 0;">
+              Watch {{ product()!.sku }}
+            </div>
+
+            <!-- Description -->
+            <p class="body-text" style="margin-bottom: 40px; max-width: 300px;">
+              {{ product()!.shortDescription }}
+            </p>
+
+            <!-- Add to Cart Button -->
+            <button
+              class="cta-button"
+              (click)="addToCart()"
+            >
+              <span class="button-text">Add to Shopping Bag</span>
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+    } @else {
+      <div class="text-center">
+        <p class="body-text">Product not found.</p>
+      </div>
+    }
+  </div>
+</div>
+

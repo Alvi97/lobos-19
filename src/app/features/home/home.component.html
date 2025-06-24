@@ -4,4 +4,21 @@
   [loading]="loading"
   [error]="error"
   />
+
+  <app-product-showcase
+  [category]="'Product Details'"
+  [title]="product()?.productDetails?.title"
+  [imageSrc]="product()?.productDetails?.mainImage"
+  [imagePosition]="'right'"
+  [showcaseData]="product()?.productDetails?.data"
+  />
+
+  <app-product-showcase
+    [category]="'Specifications'"
+    [title]="product()?.productSpecifications?.title"
+    [imageSrc]="product()?.productSpecifications?.mainImage"
+    [imagePosition]="'left'"
+    [showcaseData]="product()?.productSpecifications?.data"
+  />
 </div>
+

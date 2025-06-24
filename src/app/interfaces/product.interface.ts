@@ -9,11 +9,13 @@ export interface ProductDetail {
   text: string;
   iconTarget: string;
   sortOrder: number;
+  imageSrc:string | undefined;
 }
 
 export interface ProductDetailsSection {
   title: string;
   data: ProductDetail[];
+  mainImage?:string
 }
 
 export interface ProductSpecification {
@@ -21,11 +23,13 @@ export interface ProductSpecification {
   text: string;
   iconTarget: string;
   sortOrder: number;
+  imageSrc:string | undefined
 }
 
 export interface ProductSpecificationsSection {
   title: string;
   data: ProductSpecification[];
+  mainImage?: string;
 }
 
 export interface Product {
@@ -71,8 +75,8 @@ export interface ProductImages {
 
 export interface ProcessedProduct extends ProductWithPrice {
   images: ProductImages;
-  sortedDetails: ProductDetail[];
-  sortedSpecifications: ProductSpecification[];
+  // sortedDetails: ProductDetail[];
+  // sortedSpecifications: ProductSpecification[];
 }
 
 export interface SliderState {

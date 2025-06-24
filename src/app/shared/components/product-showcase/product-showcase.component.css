@@ -1,0 +1,150 @@
+.product-details-flex {
+  display: flex;
+  gap: var(--grid-gap);
+  align-items: center;
+  min-height: 600px;
+}
+
+/* When image is on the left, reverse the flex direction */
+.product-details-flex.image-left {
+  flex-direction: row-reverse;
+}
+
+/* Content section */
+.details-content {
+  flex: 1;
+  padding-right: 60px;
+}
+
+/* Adjust padding when image is on left */
+.image-left .details-content {
+  padding-right: 0;
+  padding-left: 60px;
+}
+
+/* Override section-label margin for this context */
+.details-content .section-label {
+  margin-bottom: 16px;
+}
+
+/* Override section-heading margin for this context */
+.details-content .section-heading {
+  margin-bottom: 48px;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+/* Specifications grid using flexbox */
+.specifications-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 40px;
+}
+
+/* Each spec item takes up ~50% width minus gap */
+.specifications-flex app-spec-item {
+  flex: 0 0 calc(50% - 20px);
+}
+
+/* Image container */
+.details-image-container {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-detail-image {
+  background: var(--color-background-dark);
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 480px;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .product-details-flex {
+    gap: 32px;
+  }
+
+  .details-content {
+    padding-right: 40px;
+  }
+
+  .image-left .details-content {
+    padding-right: 0;
+    padding-left: 40px;
+  }
+
+  .details-image-container {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* On mobile, always stack vertically with image on top */
+  .product-details-flex,
+  .product-details-flex.image-left {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .details-content {
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+    order: 2;
+  }
+
+  .image-left .details-content {
+    padding-left: 0;
+  }
+
+  .details-image-container {
+    order: 1;
+    flex: none;
+    width: 100%;
+    min-height: 500px;
+  }
+
+  .specifications-flex {
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .specifications-flex app-spec-item {
+    flex: 0 0 calc(50% - 20px);
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .details-content .section-heading {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .specifications-flex {
+    gap: 16px;
+  }
+
+  .specifications-flex app-spec-item {
+    flex: 0 0 100%;
+  }
+
+  .details-image-container {
+    min-height: 400px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-image-container {
+    min-height: 350px;
+    padding: 20px;
+  }
+}
