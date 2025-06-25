@@ -145,7 +145,7 @@ ul, ol {
   :root {
     --font-size-title: 28px;
     --font-size-section: 24px;
-    --font-size-price: 20px;
+    --font-size-price: 16px;
   }
 }
 
@@ -153,6 +153,6 @@ ul, ol {
   :root {
     --font-size-title: 24px;
     --font-size-section: 20px;
-    --font-size-price: 18px;
+    --font-size-price: 14px;
   }
 }

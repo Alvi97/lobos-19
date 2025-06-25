@@ -72,7 +72,6 @@
   font-size: var(--font-size-price);
   font-weight: var(--font-weight-regular);
   color: var(--color-text-secondary);
-  margin: 24px 0;
 }
 
 .section-heading {

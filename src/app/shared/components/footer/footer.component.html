@@ -1,1 +1,36 @@
-<p>footer works!</p>
+<footer class="app-footer">
+  <div class="container footer-container">
+    <div class="footer-content">
+      @for (column of footerColumns(); track column.heading) {
+        <div class="footer-column" [class.brand-info]="column.heading === 'THE BRAND'">
+          <h3 class="footer-heading">{{ column.heading }}</h3>
+
+          @if (column.contactInfo) {
+            @for (line of column.contactInfo.addressLines; track $index) {
+              <p class="footer-text bold-footer-item-indicator" style="font-weight: bold">{{ line }}</p>
+            }
+            <p class="footer-text phone-contact">
+              <span class="bold-footer-item-indicator">T</span> <a>{{ column.contactInfo.phone }}</a>
+            </p>
+            <p class="footer-text fax-contact">
+              <span class="bold-footer-item-indicator">F</span> <a>{{ column.contactInfo.fax }}</a>
+            </p>
+            <p class="email-contact ">
+              <span class="bold-footer-item-indicator">M</span> <a class="text-gold">{{ column.contactInfo.email }}</a>
+            </p>
+          } @else if (column.links) {
+            <ul class="footer-links">
+              @for (link of column.links; track link.label) {
+                <li><a [routerLink]="link.url" class="footer-text">{{ link.label }}</a></li>
+              }
+            </ul>
+          }
+        </div>
+      }
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-text copyright-text">{{ copyrightText() }}</p>
+    </div>
+  </div>
+</footer>

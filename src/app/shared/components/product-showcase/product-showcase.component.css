@@ -40,7 +40,6 @@
 }
 
 .details-image-container {
-  flex: 0 0 50%;
   display: flex;
   align-items: center;
   min-height: 600px;
@@ -70,9 +69,7 @@
     padding-left: 40px;
   }
 
-  .details-image-container {
-    padding: 40px;
-  }
+
 }
 
 @media (max-width: 1024px) {
@@ -126,15 +123,5 @@
     flex: 0 0 100%;
   }
 
-  .details-image-container {
-    min-height: 400px;
-    padding: 30px;
-  }
 }
 
-@media (max-width: 480px) {
-  .details-image-container {
-    min-height: 350px;
-    padding: 20px;
-  }
-}

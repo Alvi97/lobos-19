@@ -1,0 +1,136 @@
+.app-footer {
+  padding: 60px 0 30px;
+  border-top: 1px solid var(--color-border-light);
+  color: var(--color-text-primary);
+}
+
+.footer-container{
+  max-width: 1080px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--grid-gap);
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column.brand-info {
+  flex: 1.5;
+  max-width: 300px;
+}
+
+.footer-heading {
+  font-family: var(--font-family-secondary);
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
+}
+
+.bold-footer-item-indicator{
+  font-weight: var(--font-weight-bold);
+  margin-right: 20px;
+}
+
+.footer-text {
+  font-family: var(--font-family-secondary);
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin-bottom: 8px;
+}
+
+.footer-text a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.footer-text a:hover {
+  color: var(--color-gold-primary);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--color-border-gray);
+  padding-top: 20px;
+}
+
+.copyright-text {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 1024px) {
+  .footer-content {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .footer-column {
+    flex: 0 0 calc(50% - (var(--grid-gap) / 2));
+    margin-bottom: 30px;
+  }
+
+  .footer-column.brand-info {
+    flex: 0 0 100%;
+    max-width: none;
+    text-align: center;
+    order: -1;
+  }
+
+  .footer-text {
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-footer {
+    padding: 40px 0 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-column {
+    flex: 0 0 100%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .footer-column.brand-info {
+    order: -1;
+  }
+
+  .footer-bottom {
+    padding-top: 15px;
+  }
+}

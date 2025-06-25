@@ -67,7 +67,7 @@
 .product-info .product-price {
   color: #C8A882;
   margin-bottom: 25px;
-  font-size: 26px;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -154,7 +154,7 @@
   }
 
   .product-info .product-price {
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 
